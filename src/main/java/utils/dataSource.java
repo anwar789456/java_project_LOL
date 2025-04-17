@@ -3,7 +3,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 public class dataSource {
-    private String url="jdbc:mysql://localhost:3306/pidevversion2";
+    private String url="jdbc:mysql://localhost:3232/pidev3";
     private String username="root";
     private String pwd="";
     private Connection connection;
