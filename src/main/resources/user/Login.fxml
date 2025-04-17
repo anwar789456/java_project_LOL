@@ -48,5 +48,13 @@
                 layoutY="240.0"
                 prefWidth="100.0"
                 style="-fx-background-color: #0078D7; -fx-text-fill: white;" />
+        <!-- Sign Up Button -->
+        <Button text="Sign Up"
+                fx:id="signupButton"
+                layoutX="250.0"
+                layoutY="290.0"
+                prefWidth="100.0"
+                style="-fx-background-color: #28a745; -fx-text-fill: white;" />
+
     </children>
 </AnchorPane>

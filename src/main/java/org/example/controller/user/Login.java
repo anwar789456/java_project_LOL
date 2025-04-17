@@ -1,6 +1,5 @@
 package org.example.controller.user;
 
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -30,9 +29,27 @@ public class Login {
     private Button loginButton;
 
     @FXML
+    private Button signupButton;
+
+
+    @FXML
     private void initialize() {
         // Handle button click event
         loginButton.setOnAction(event -> handleLogin());
+        signupButton.setOnAction(event -> openSignUpForm());
+    }
+
+    private void openSignUpForm() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/user/signup.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Sign Up");
+            stage.show();
+        } catch (Exception e) {
+            System.err.println("❌ Error loading SignUp form: " + e.getMessage());
+        }
     }
 
     private void handleLogin() {
@@ -76,4 +93,6 @@ public class Login {
             }
         }
     }
+
+
 }
