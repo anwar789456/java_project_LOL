@@ -30,5 +30,8 @@
         <TextField fx:id="imageUrlField" layoutX="200.0" layoutY="285.0" prefWidth="250.0" />
 
         <Button fx:id="registerButton" layoutX="274.0" layoutY="347.0" style="-fx-background-color: #0078D7; -fx-text-fill: white;" text="Register" />
+
+        <Button fx:id="closeButton" layoutX="274.0" layoutY="400.0" style="-fx-background-color: #d9534f; -fx-text-fill: white;" text="Cancel" />
+
     </children>
 </AnchorPane>

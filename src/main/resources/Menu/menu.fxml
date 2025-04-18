@@ -20,6 +20,9 @@
                 <Button fx:id="projetButton" prefWidth="305.0" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-font-size: 14; -fx-pref-height: 40;" text="Projet" />
                 <Button fx:id="webinarButton" prefWidth="376.0" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-font-size: 14; -fx-pref-height: 40;" text="Webinar" />
                 <Button fx:id="coursButton" prefWidth="367.0" style="-fx-background-color: #34495e; -fx-text-fill: #ecf0f1; -fx-font-size: 14; -fx-pref-height: 40;" text="Cours" />
+
+                <!-- Logout Button -->
+                <Button fx:id="logoutButton" prefWidth="367.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 14; -fx-pref-height: 40; -fx-margin-top: 20;" text="Logout" />
             </children>
         </VBox>
 

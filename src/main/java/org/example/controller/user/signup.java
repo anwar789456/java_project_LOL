@@ -36,9 +36,16 @@ public class signup {
     private Button registerButton;
 
     @FXML
+    private Button closeButton;
+
+
+    @FXML
     private void initialize() {
         registerButton.setOnAction(event -> handleSignup());
+        closeButton.setOnAction(event -> registerButton.getScene().getWindow().hide());
     }
+
+
 
     private void handleSignup() {
         String name = nameField.getText();
