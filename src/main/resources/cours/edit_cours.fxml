@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.cours.EditCoursController">
+    <GridPane hgap="10" vgap="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+        <Label text="Course Title" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="nomCours" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="Description" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="descriptionCours" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="Type" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <ChoiceBox fx:id="choiceTypeCours" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="Price" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="priceField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Button fx:id="submitButton" text="Submit" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+
+        <!-- Add the upload image button -->
+        <Button fx:id="uploadImageButton" text="Upload Image" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+
+        <!-- Add an ImageView to preview the uploaded image -->
+        <ImageView fx:id="imagePreview" fitHeight="200" fitWidth="200" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+    </GridPane>
+</AnchorPane>

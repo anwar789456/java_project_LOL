@@ -12,13 +12,14 @@ import java.io.IOException;
     }
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/user/Login.fxml"));
+        //FXMLLoader loader = new FXMLLoader(getClass().getResource("/user/Login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Menu/Home.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Gestion de trajet");
         // Force database connection
-        utils.dataSource.getInstance();
+        //utils.dataSource.getInstance();
         primaryStage.show();
     }
 }
