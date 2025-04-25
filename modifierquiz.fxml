@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.quiz.ModifierQuiz">
+    <children>
+        <VBox layoutX="14.0" layoutY="15.0" prefWidth="300" spacing="10">
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Modifier le quiz" />
+
+            <Label text="Titre:" />
+            <TextField id="titreField" fx:id="titreField" />
+
+            <Label text="Description:" />
+            <TextArea id="descriptionArea" fx:id="descriptionArea" prefRowCount="4" />
+
+            <Label text="Date de création:" />
+            <DatePicker id="dateCreationPicker" fx:id="dateCreationPicker" />
+
+            <Label text="Date de début:" />
+            <DatePicker id="dateDebutPicker" fx:id="dateDebutPicker" />
+
+            <Label text="Date de fin:" />
+            <DatePicker id="dateFinPicker" fx:id="dateFinPicker" />
+
+            <Label text="Statut:" />
+            <ComboBox id="statutComboBox" fx:id="statutComboBox" />
+
+            <HBox spacing="10">
+                <Button fx:id="saveButton" style="-fx-background-color: #FFA500; -fx-text-fill: white;" text="Mettre à jour" />
+                <Button fx:id="cancelButton" style="-fx-background-color: #6c757d; -fx-text-fill: white;" text="Annuler" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

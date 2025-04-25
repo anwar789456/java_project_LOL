@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.quiz.AfficherQuestionQuiz">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <HBox alignment="CENTER_RIGHT" spacing="10">
+        <Label text="Gestion des questions" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="returnButton" text="Retour" style="-fx-background-color: #6c757d; -fx-text-fill: white;" onAction="#handleReturn"/>
+    </HBox>
+
+    <TableView fx:id="questionTableView" prefHeight="400.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID"/>
+            <TableColumn fx:id="idQuizColumn" prefWidth="100.0" text="ID Quiz"/>
+            <TableColumn fx:id="questionColumn" prefWidth="200.0" text="Question"/>
+            <TableColumn fx:id="option1Column" prefWidth="150.0" text="Option 1"/>
+            <TableColumn fx:id="option2Column" prefWidth="150.0" text="Option 2"/>
+            <TableColumn fx:id="option3Column" prefWidth="150.0" text="Option 3"/>
+            <TableColumn fx:id="option4Column" prefWidth="150.0" text="Option 4"/>
+            <TableColumn fx:id="bonneReponseColumn" prefWidth="100.0" text="Réponse"/>
+            <TableColumn fx:id="typeQuestionColumn" prefWidth="100.0" text="Type"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="addButton" text="Ajouter" style="-fx-background-color: #28a745; -fx-text-fill: white;" onAction="#handleAdd"/>
+        <Button fx:id="modifyButton" text="Modifier" style="-fx-background-color: #17a2b8; -fx-text-fill: white;" onAction="#handleModify"/>
+        <Button fx:id="deleteButton" text="Supprimer" style="-fx-background-color: #dc3545; -fx-text-fill: white;" onAction="#handleDelete"/>
+    </HBox>
+</VBox> 

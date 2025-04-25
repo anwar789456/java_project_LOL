@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.quiz.AjouterQuestionQuiz">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <HBox alignment="CENTER_RIGHT" spacing="10">
+        <Label text="Ajouter une question" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="closeButton" text="✕" style="-fx-background-color: transparent; -fx-text-fill: red; -fx-font-size: 16px;" onAction="#handleCancel"/>
+    </HBox>
+
+    <Label text="Sélectionner le quiz:"/>
+    <ComboBox fx:id="quizComboBox" promptText="Choisir un quiz"/>
+
+    <Label text="Question:"/>
+    <TextArea fx:id="questionArea" prefRowCount="3"/>
+
+    <Label text="Option 1:"/>
+    <TextField fx:id="option1Field"/>
+
+    <Label text="Option 2:"/>
+    <TextField fx:id="option2Field"/>
+
+    <Label text="Option 3:"/>
+    <TextField fx:id="option3Field"/>
+
+    <Label text="Option 4:"/>
+    <TextField fx:id="option4Field"/>
+
+    <Label text="Réponse correcte (1-4):"/>
+    <TextField fx:id="reponseCorrecteField"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button fx:id="saveButton" text="Confirmer" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" onAction="#handleSave"/>
+        <Button fx:id="cancelButton" text="Annuler" style="-fx-background-color: #f44336; -fx-text-fill: white;" onAction="#handleCancel"/>
+    </HBox>
+</VBox> 
